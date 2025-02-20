@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class javaprogram4 {
 public static void main(String[] args) {
 Scanner scan =  new Scanner(System.in);
+System.out.print("enter the integer:");
 int a = scan.nextInt();
 int b = scan.nextInt();
  a=a*b;

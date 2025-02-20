@@ -13,6 +13,7 @@ public class arrayprogram {
     } */
 
     //reverse using Collectios.revervse
+
     /*Integer [] h = {1,2,3,4,5,6,7,8,9,10};
     Collections.reverse(Arrays.asList(h));
        System.out.println(Arrays.asList(h));
@@ -64,11 +65,12 @@ int b=0;
   int sum=0;
   for(int i=0;i<n;i++){
    if(i%2==0)
-   sum+=a[i];
+   sum=sum+a[i];
 }
    System.out.println(sum); 
    */
-  int a[]={1,2,3,4,5,6,7,8,9};
+ /* 
+   int a[]={1,2,3,4,5,6,7,8,9};
   int n=a.length;
   int sum=0;
   for(int i=0;i<n;i++){
@@ -76,9 +78,7 @@ int b=0;
    sum+=a[i];
 }
    System.out.println(sum); 
+*/
+ }
 }
-}
-
-
-
 
