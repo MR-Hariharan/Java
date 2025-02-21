@@ -78,7 +78,7 @@ int b=0;
    sum+=a[i];
 }
    System.out.println(sum); 
-*/
+*/ 
  }
 }
 
