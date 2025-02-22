@@ -4,7 +4,7 @@ public class patternplus {
         for(int i=0;i<=a;i++){
             for(int j=0;j<=a;j++){
                 if(i==4 ||j==4){
-                System.out.print("h ");
+                System.out.print("o ");
             } else {
                 System.out.print("  ");
             }
