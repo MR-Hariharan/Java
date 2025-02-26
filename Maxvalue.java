@@ -19,7 +19,8 @@ public static void main (String[] args){
      // int a[][]={{12,24,3},{5,6,9},{34,78,96}};  
           int max_element=max(a);
       System.out.println(max_element);
+    System.out.println("");
 }
     }
-
+          
 

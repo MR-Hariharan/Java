@@ -10,4 +10,4 @@ row3sum += matrix[i][matrix.length-1-i];
 }
 System.out.println(row2sum+" "+row3sum);
 }
-}
+} 
