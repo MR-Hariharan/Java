@@ -6,7 +6,7 @@ public class arrayadding {
         int c[] =new int[5];
         int n=a.length;
         int carry=0;
-        for(int i=n-1,j=0;i>=0;i--){
+        for(int i=n-1;i>=0;i--){
                 int sum=a[i]+b[i]+carry;
                 c[i+1]=sum%10;
                 carry=sum/10;
@@ -15,6 +15,6 @@ public class arrayadding {
         //for(int i=0;i<c.length;i++){
             System.out.print(Arrays.toString(c));
         }
-            }
+        }
     
 
