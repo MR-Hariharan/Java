@@ -15,5 +15,4 @@ public class reverseaword {
             }
             System.out.println(output.toString());
         }
-    }
-
+    }  
