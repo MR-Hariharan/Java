@@ -11,14 +11,14 @@ public class palindrome {
             return x == reversedHalf || x == reversedHalf / 10;
         }
         public static void main(String[] args) {
-            palindrome solution = new palindrome();
+            palindrome S = new palindrome();
             
             int x = 121;
-            System.out.println(solution.isPalindrome(x));  
+            System.out.println(S.isPalindrome(x));  
             x = -121;
-            System.out.println(solution.isPalindrome(x));  
+            System.out.println(S.isPalindrome(x));  
              x = 10;
-            System.out.println(solution.isPalindrome(x));  
+            System.out.println(S.isPalindrome(x));  
         }
     }
 
