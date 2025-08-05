@@ -15,7 +15,7 @@ public class test {
                 c[j] = '0';
             }
         }
-        if
+        
     }
 }
 }
