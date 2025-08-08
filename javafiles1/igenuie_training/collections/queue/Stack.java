@@ -1,4 +1,4 @@
-package collections.stackcollection;
+package collections.queue;
 
 public class Stack {
     private int top;

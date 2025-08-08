@@ -25,7 +25,9 @@ public void addlast(int data){
     add(data);
 }
 public void remove(int data){
-    node newnode = new node(data);
-
+    if(head == null){
+        return;
+    }
+    if()
 }
 }
