@@ -7,27 +7,43 @@ public class BankAppMain {
         while (true) {
             System.out.println("1.Create Account\n2.Deposit\n3.Withdtraw\n4.CheckBalance\n5.Exit");
             System.out.println("enter the choice: ");
-            int choice = sc.nextInt();
+            int choice = 0;
+            try{
+                choice = sc.nextInt();
+                sc.nextLine();
+            }catch(Exception e){
+                System.out.println("Invlaid input.please enter a number:");
+                sc.nextLine();
+                TransactionUtils.printSeparator();
+                System.out.println("Transaction completed.");
+                continue;
+            }
             try{if(choice == 1){
             if(User.userCount >=5){
                 System.out.println("maximum limit reached");
                 }
                 System.out.println("enter the accountholdername:");
-                int name = sc.nextInt();
+                String name = sc.nextLine();
                 System.out.println("enter the initial deposit:");
                 double deposit = sc.nextDouble();
+                sc.nextLine();
                 System.out.println("enter the acc type (regular -1 ,premium - 2)");
                 int type = sc.nextInt();
-                User user;
+                sc.nextLine();
+                User user =null;
                 if(type == 1){
-                    user = new RegularAccount(null, deposit);
-                }else{
-                    user = new PremiumAccount(null, deposit);
+                    user = new RegularAccount("", deposit);
+                }else if(type == 2){ 
+                    user = new PremiumAccount("", deposit);
                 }
+                else{
+                    System.out.println("Invalid account type.");
+                }
+                if(user !=  null){
                 BankManager.adduser(user);
                 System.out.println("account number:"+user.getAccountNumber());
             }
-        
+        }
             else if(choice == 2){
                 System.out.println("enter the account number:");
                 int accno = sc.nextInt();

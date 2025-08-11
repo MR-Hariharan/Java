@@ -1,4 +1,4 @@
-package collections.stackcollection;
+package task3;
 
 public class Stack {
     private int top;
@@ -47,12 +47,5 @@ public class Stack {
                 System.out.println(stack[i]);
             }
         }
-    }
-     //peek()
-    public int peek(){
-        if(isEmpty()){
-            System.out.println("stack is empty");
-        }
-     return stack[top];  
     }
 }

@@ -9,7 +9,7 @@ public class BankManager {
 }
 public static User getaccountno(int accno){
     for(User user : users){
-        if(user.getAccountNumber() == accno){
+        if(user != null && user.getAccountNumber() == accno){
             return user;
         }
     }

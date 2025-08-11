@@ -8,7 +8,7 @@ public abstract class User {
 User(String name,double initialDeposit){
     userCount++;
     this.accountHolderName=name;
-    this.accountNumber=1000 + (++userCount);
+    this.accountNumber=1000 + (userCount);
     this.balance=initialDeposit;
 }
 public String getAccountHolderName() {
