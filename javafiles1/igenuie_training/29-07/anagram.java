@@ -2,7 +2,7 @@ import java.util.*;
 public class anagram {
     public static void main(String[] args){
         String str1 = "gum";
-        String str2 = "mug";
+        String str2 = "muug";
         int[] arr = new int[256];
         if(str1.length()!=str2.length()){
              System.out.println("not a anagram");
